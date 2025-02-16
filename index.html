@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // تفعيل التفاعل عند الضغط على الأيقونة الثلاثية
+// تأكد من أن سكربت الجافا سكربت يعمل بعد تحميل الصفحة بشكل كامل
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuList = document.getElementById("menu-list");
+
+    menuToggle.addEventListener("click", () => {
+        menuList.classList.toggle("show"); // إظهار أو إخفاء القائمة
+        menuToggle.classList.toggle("active"); // إضافة التفاعل على الأيقونة
+    });
+});
+    </script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="pulse-logo.svg" alt="logo">
+            <ul id="menu-list">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Customer Stories</a></li>
+              <li>  <span><a href="#">Pricing</a></span></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Try Pulse free for</h1>
+        <p> See why Pluse is the best way to monitor your cash flow. Sign up</p>
+    </main> 
+
+<!----------------->
+</body>
+</html>

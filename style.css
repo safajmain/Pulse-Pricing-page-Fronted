@@ -1,7 +1,7 @@
  
 header {
     padding: 10px 5%;
-    background-color: #eafaf1 ; /* يمكنك تغيير اللون حسب الحاجة */
+    background-color: #eafaf1 ;  
 }
 body{
     background-color: #eafaf1;
@@ -14,7 +14,7 @@ nav {
 }
 
 nav img {
-    margin-right: 30px; /* المسافة بين اللوغو والطرف */
+    margin-right: 30px;  
 }
 
 nav ul {  
@@ -22,7 +22,7 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 30px; /* المسافة بين العناصر */
+    gap: 30px;  
     padding: 0;
     margin: 0;  
 
@@ -34,15 +34,14 @@ nav ul li, nav ul span {
      font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
   
-         text-align: right; /* محاذاة العناصر إلى اليمين */
-        font-size: 20px; /* تكبير الخط */
+         text-align: right; 
+         font-size: 20px;  
     
 }
-/* تغيير محاذاة العناصر وحجم الخط */
-nav ul li {
+ nav ul li {
     margin-left: 10px;
-    text-align: right; /* محاذاة العناصر إلى اليمين */
-    font-size: 20px; /* تكبير الخط */
+    text-align: right;  
+    font-size: 20px; 
 }
 
 nav ul li a {
@@ -71,8 +70,8 @@ main {
 h1 {
     font-weight: bold;
     color: black;
-    font-size: 48px; /* يمكنك تعديل الحجم حسب الحاجة */
-    display: inline-block;
+    font-size: 48px; 
+     display: inline-block;
     line-height: 1.2;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
@@ -85,9 +84,9 @@ h1::after {
 
 p {
     font-size: 16px;
-    color: #A9A9A9; /* لون رمادي فاتح */
-    margin-top: 5px; /* لضبط المسافة بين العنوان والفقرة */
-    font-style: normal;
+    color: #A9A9A9;
+     margin-top: 5px;
+     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
 }
 p::after {
@@ -95,30 +94,28 @@ p::after {
     display: block;
 }
 
-/* ميديا كويري للموبايل */
-@media screen and (max-width: 768px) {
-         /* تعديل التاف ليأخذ اللون الأزرق على كامل الشاشة */
-    nav {
-        background-color: #fff; /* تغيير اللون إلى الأزرق */
-        width: 100%;
+ @media screen and (max-width: 768px) {
+     nav {
+        background-color: #fff;
+         width: 100%;
           
     }
 
   
     nav ul {
-        display: none; /* إخفاء القائمة في الموبايل */
+        display: none; 
         position: absolute;
         top: 80px;
         right: 0;
-        background-color:  #eafaf1 ; /* لون أبيض مع شفافية */
+        background-color:  #eafaf1 ;  
         backdrop-filter: blur(10px);      
-           width: 100%; /* جعل عرض الصفحة البيضاء 100% من الشاشة */
-        height: 100vh; /* جعل الصفحة البيضاء تأخذ 100% من ارتفاع الشاشة */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           width: 100%;  
+        height: 100vh;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 20px;
         flex-direction: column;
-        gap: 20px; /* زيادة المسافة بين العناصر */
-        border-radius: 0px;
+        gap: 20px;
+         border-radius: 0px;
         opacity: 0;
         transition: opacity 0.3s ease;
         font-family: Arial, Helvetica, sans-serif;
@@ -154,21 +151,20 @@ p::after {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
-    /* محاذاة النص إلى اليسار وزيادة حجم الخط */
-    nav ul li {
-        width:85%; /* تأكد من أن كل عنصر داخل القائمة يأخذ العرض الكامل */
-        text-align: left; /* محاذاة النص إلى اليسار */
+     nav ul li {
+        width:85%;  
+        text-align: left;  
     }
 
     nav ul li a {
-        font-size: 28px; /* زيادة حجم الخط */
-        font-weight: bold; /* جعل الخط عريضًا */
-        text-align: left; /* محاذاة النص إلى اليسار */
+        font-size: 28px; 
+        font-weight: bold;  
+        text-align: left;  
         padding: 15px;
         border-radius: 5px;
         transition: all 0.5s ease;
-        display: block; /* تأكد أن كل رابط داخل li يأخذ المساحة الكاملة */
-        letter-spacing: 2px; /* زيادة المسافة بين الحروف */
+        display: block; 
+        letter-spacing: 2px; 
     }
 
     nav ul li a:hover {
@@ -176,35 +172,34 @@ p::after {
         color: #1fe374;
     }
 
-    /* التأثير عند التمرير على الـ span */
-    nav ul li span {
-        display: block; /* التأكد أن span يعامل ككتلة */
-        text-align: left; /* محاذاة النص داخل span إلى اليسار */
-        font-size: 28px; /* نفس حجم الخط */
-        font-weight: bold; /* الخط عريض */
-        letter-spacing: 2px; /* زيادة المسافة بين الحروف */
+     nav ul li span {
+        display: block;  
+        text-align: left;  
+        font-size: 28px;  
+        font-weight: bold;  
+        letter-spacing: 2px; 
         padding: 15px;
-        width: 100%; /* تأكد أن المساحة كاملة */
+        width: 100%;  
     }
 
     main {
-        text-align: left; /* محاذاة النص إلى اليسار */
+        text-align: left;  
         padding: 10px 4%;
     }
     
     h1 {
         font-weight: bold;
         color: black;
-        font-size: 40px; /* زيادة حجم الخط */
+        font-size: 40px;  
         font-style: normal;
         font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 20px; /* مسافة بين العنوان والفقرة */
+        margin-bottom: 20px;  
     }
     
     p {
-        font-size: 19px; /* زيادة حجم الخط في الفقرة */
-        color: #A9A9A9; /* لون رمادي فاتح */
-        margin-top: 5px; /* مسافة بين العنوان والفقرات */
+        font-size: 19px;  
+        color: #A9A9A9;  
+        margin-top: 5px; 
         font-style: normal;
         font-family: Arial, Helvetica, sans-serif;
     }

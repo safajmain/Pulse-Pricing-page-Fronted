@@ -66,37 +66,27 @@ nav ul li:last-child a {
 }
 
  
-main {
-    text-align: center;
-    padding: 50px 10%;
-}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .hero h1{
+        text-align: center;
+        width: 38vh;
+        font-size: 56px;
+    
+    }
+    .hero p{
+        text-align: center;
+        width: 80vh;
+        font-size: 20px;
+    }
 
-h1 {
-    font-weight: bold;
-    color: black;
-    font-size: 48px; 
-     display: inline-block;
-    line-height: 1.2;
-    font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-h1::after {
-    content: " 30 days.";
-    display: block;
-}
 
-p {
-    font-size: 16px;
-    color: #A9A9A9;
-     margin-top: 5px;
-     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
-}
-p::after {
-    content: "  for any plan and try Pluse absolutely free for 30 days.";
-    display: block;
-}
+
 
  @media screen and (max-width: 768px) {
      nav {
@@ -212,7 +202,219 @@ p::after {
     
 }
  /*       css abd */
+ section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.card-left{
+    padding-right: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-left li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding:5px;
+    color: #343434;
+}
+.card-left h1{
+    margin-left: 20px;
+    color: #00ad6a;
+    font-weight: bolder;
+font-size: 25px;
+width: 400px;
+}
+.card-left p{
+
+    color: #4a4a4a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+font-size: 16px;
+width: 260px;
+}
+.card-left p a{
+color: #000000;
+}
+.card{
+ border: solid 1px #00ad6a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+gap: 15px;
+    background-color: #ffffff;
+    border-radius:10px 10px 0 0;
+
+}
+.card p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+padding: 5px 0;
+border-radius:9px 9px 0 0;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    background-color: #00ad6a;
+font-size: 12px;
+width: 100%;
+}
+.card h1{
+    display: flex;
+    text-align: center;
+    margin-right: 150px;
+    color: #00ad6a;
+    font-size: 45px;
+    width: 40px;
+}
+.card h2{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #363636;
+    font-weight: lighter;
+}
+.card button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    font-weight: bolder;
+    width: 170px;
+    height: 40px;
+    background-color: #1fe374;
+    color: #2d2d2d;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.card h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #272727;
+}
+.card ul{
+    list-style: none;
+    padding: 10px;
+}
+.card ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 7px;
+    color: #343434;
+}
+.card-right{
+    border: solid 1px #e0e0e0;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 400px;
+       background-color: #ffffff;
+   
+   }
+   .card-right p{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+   padding: 20px 0;
+       margin: auto;
+       text-align: center;
+       color: #454545;
+       background-color: #efefef;
+   font-size: 12px;
+   width: 100%;
+   }
+   .card-right h1{
+       display: flex;
+       text-align: center;
+       margin-right: 150px;
+       color: #00ad6a;
+       font-size: 45px;
+       width: 40px;
+   }
+   .card-right h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+       color: #363636;
+       font-weight: lighter;
+   }
+   .card-right button{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       position: relative;
+       font-weight: bolder;
+       width: 170px;
+       height: 40px;
+       background-color: #1fe374;
+       color: #4c4c4c;
+       border: none;
+       font-size: 16px;
+       text-align: center;
+       line-height: 40px;
+       cursor: pointer;
+   }
+   .card-right button:hover
+   ,   .card button:hover{
+scale: 1.2;
+color: #000;
+}
+   .card-right h3{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 13px;
+       font-weight: bolder;
+       color: #272727;
+   }
+   .card-right ul{
+       list-style: none;
+       padding: 10px;
+   }
+   .card-right ul li{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 12px;
+       padding: 7px;
+       color: #343434;
+   }
+  .footer-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    text-align: center;
+    padding: 60px;
+    
+  }
+  .footer-body img{
+    width: 70px;
+
+  }
+  .footer-body h2{
+      width: 800px;
+     
+  } 
+  .footer-body p{
+    color: #00ad6a;
+  }
+  .FAQ{
+    background-color: white;
+    padding: 100px 350PX;
+  }
+  .FAQ-body{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(
+    400px, 1fr));
+  }
+  
  
+ 
+ 
+  .FAQ-body p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: 
+    #5b5e63;
+  }
 /* css footer */ 
 body {
     overflow-x: hidden;

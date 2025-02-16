@@ -6,15 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // تفعيل التفاعل عند الضغط على الأيقونة الثلاثية
-// تأكد من أن سكربت الجافا سكربت يعمل بعد تحميل الصفحة بشكل كامل
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
     const menuToggle = document.getElementById("menu-toggle");
     const menuList = document.getElementById("menu-list");
 
     menuToggle.addEventListener("click", () => {
-        menuList.classList.toggle("show"); // إظهار أو إخفاء القائمة
-        menuToggle.classList.toggle("active"); // إضافة التفاعل على الأيقونة
+        menuList.classList.toggle("show");  
+        menuToggle.classList.toggle("active");  
     });
 });
     </script>
@@ -47,8 +45,46 @@ document.addEventListener("DOMContentLoaded", function() {
 <!----------Abdalrahman ------->
 
 
-
-
+ 
 <!--footer +++++safa----->
+<footer>
+    <div class="container">
+        <div class="sec1">
+            <img src="pulse-logo.svg" alt="logo">
+            <button>Sign Up FOR A fREE 30 -dAY TRIAL</button>  
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Company</h3>
+                <ul>
+                     <li><a href="#">Customer Stories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#"> Contact</a></li>
+                 </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#"> Support</a></li>
+                    <li><a href="#">Blog</a></li>
+                 </ul>
+            </div>
+        </div>
+        <div class="sec2">
+            <p>Try Pulse free for 30 days. No credit card required.</p>
+            <button>CONTACT US</button>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
